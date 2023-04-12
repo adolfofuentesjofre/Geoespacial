@@ -2,7 +2,7 @@
 """
 Created on Fri Apr  5 15:41:17 2019
 
-@author: a0f00zq
+@author: Adolfo Fuentes Jofré
 """
 import plotly
 from plotly.offline import init_notebook_mode, plot, iplot
@@ -923,7 +923,7 @@ def Geodecodificacion(df, servidor):
     """
     # Define el tipo de servidor con el que se decodificará
     if servidor == 'Nominatim':        
-        geolocator = Nominatim(user_agent="catalina.muruua@gmail.com")
+        geolocator = Nominatim(user_agent="adolfo.fuentes.j@gmail.com")
         geocode = RateLimiter(geolocator.geocode, min_delay_seconds=1)
     elif servidor == 'Arcgis':
         geolocator = ArcGIS() 
